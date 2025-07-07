@@ -49,7 +49,7 @@ class VerificationPage extends StatelessWidget {
                 child: SingleChildScrollView(
                   child: Center(
                     child: Container(
-                      padding: EdgeInsets.only(top: 180),
+                      padding: EdgeInsets.only(top: 100),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(

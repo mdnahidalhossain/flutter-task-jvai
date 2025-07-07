@@ -31,23 +31,25 @@ class MyListTile extends StatelessWidget {
               child: activityModel.icon,
             ),
             SizedBox(width: 6),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  activityModel.label,
-                  style: TextStyle(fontWeight: FontWeight.w600),
-                ),
-                Text(
-                  activityModel.text,
-                  style: TextStyle(color: secondaryColor),
-                ),
-              ],
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    activityModel.label,
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  Text(
+                    activityModel.text,
+                    style: TextStyle(color: secondaryColor),
+                  ),
+                ],
+              ),
             ),
-            SizedBox(width: 120),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
                   activityModel.time,

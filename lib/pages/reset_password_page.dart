@@ -49,7 +49,7 @@ class ResetPasswordPage extends StatelessWidget {
                   child: Center(
                     child: Container(
                       width: double.infinity,
-                      padding: EdgeInsets.only(top: 136),
+                      padding: EdgeInsets.only(top: 80),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(

@@ -105,7 +105,7 @@ class _SignupPageState extends State<SignupPage> {
                 child: SingleChildScrollView(
                   child: Container(
                     width: double.infinity,
-                    padding: EdgeInsets.only(top: 75, left: 35, right: 35),
+                    padding: EdgeInsets.only(top: 40, left: 35, right: 35),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -113,69 +113,71 @@ class _SignupPageState extends State<SignupPage> {
                         topRight: Radius.circular(25),
                       ),
                     ),
-                    child: Column(
-                      children: [
-                        MyTextfield(text: "Name", obscureText: false),
+                    child: Expanded(
+                      child: Column(
+                        children: [
+                          MyTextfield(text: "Name", obscureText: false),
 
-                        SizedBox(height: 26),
+                          SizedBox(height: 26),
 
-                        MyTextfield(text: "Email", obscureText: false),
+                          MyTextfield(text: "Email", obscureText: false),
 
-                        SizedBox(height: 26),
+                          SizedBox(height: 26),
 
-                        MyTextfield(text: "Password", obscureText: true),
+                          MyTextfield(text: "Password", obscureText: true),
 
-                        SizedBox(height: 26),
+                          SizedBox(height: 26),
 
-                        MyTextfield(text: "Password", obscureText: true),
+                          MyTextfield(text: "Password", obscureText: true),
 
-                        SizedBox(height: 47),
-                        MyButton(
-                          onPressed: requestSendDialogBox,
-                          text: "SIGN UP",
-                          backgroundColor: primaryColor,
-                          textColor: Colors.white,
-                        ),
+                          SizedBox(height: 47),
+                          MyButton(
+                            onPressed: requestSendDialogBox,
+                            text: "SIGN UP",
+                            backgroundColor: primaryColor,
+                            textColor: Colors.white,
+                          ),
 
-                        SizedBox(height: 32),
+                          SizedBox(height: 32),
 
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Text(
-                                  "Already Signed Up?",
-                                  style: TextStyle(
-                                    color: secondaryColor,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 14,
-                                  ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => LoginPage(),
-                                      ),
-                                    );
-                                  },
-                                  child: Text(
-                                    "Sign In",
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    "Already Signed Up?",
                                     style: TextStyle(
-                                      color: primaryColor,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 16,
+                                      color: secondaryColor,
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 14,
                                     ),
                                   ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ],
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => LoginPage(),
+                                        ),
+                                      );
+                                    },
+                                    child: Text(
+                                      "Sign In",
+                                      style: TextStyle(
+                                        color: primaryColor,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

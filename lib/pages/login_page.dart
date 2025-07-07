@@ -59,88 +59,92 @@ class LoginPage extends StatelessWidget {
                         topRight: Radius.circular(25),
                       ),
                     ),
-                    child: Column(
-                      children: [
-                        MyTextfield(text: "Email", obscureText: false),
+                    child: Expanded(
+                      child: Column(
+                        children: [
+                          MyTextfield(text: "Email", obscureText: false),
 
-                        SizedBox(height: 55),
+                          SizedBox(height: 55),
 
-                        MyTextfield(text: "Password", obscureText: true),
+                          MyTextfield(text: "Password", obscureText: true),
 
-                        SizedBox(height: 37),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            GestureDetector(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => ForgotPasswordPage(),
-                                  ),
-                                );
-                              },
-                              child: Text(
-                                "Forgot password?",
-                                style: TextStyle(color: primaryColor),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 47),
-                        MyButton(
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => InitialNavPage(),
-                              ),
-                            );
-                          },
-                          text: "SIGN IN",
-                          backgroundColor: primaryColor,
-                          textColor: Colors.white,
-                        ),
-
-                        SizedBox(height: 100),
-
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Text(
-                                  "Dont't have an account?",
-                                  style: TextStyle(
-                                    color: secondaryColor,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 14,
-                                  ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => SignupPage(),
-                                      ),
-                                    );
-                                  },
-                                  child: Text(
-                                    "Sign Up",
-                                    style: TextStyle(
-                                      color: primaryColor,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 16,
+                          SizedBox(height: 37),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          ForgotPasswordPage(),
                                     ),
-                                  ),
+                                  );
+                                },
+                                child: Text(
+                                  "Forgot password?",
+                                  style: TextStyle(color: primaryColor),
                                 ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ],
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 47),
+                          MyButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => InitialNavPage(),
+                                ),
+                              );
+                            },
+                            text: "SIGN IN",
+                            backgroundColor: primaryColor,
+                            textColor: Colors.white,
+                          ),
+
+                          SizedBox(height: 80),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Text(
+                                      "Dont't have an account?",
+                                      style: TextStyle(
+                                        color: secondaryColor,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) => SignupPage(),
+                                          ),
+                                        );
+                                      },
+                                      child: Text(
+                                        "Sign Up",
+                                        style: TextStyle(
+                                          color: primaryColor,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
