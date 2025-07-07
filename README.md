@@ -1,16 +1,9 @@
 # flutter_task_jvai
 
-A new Flutter project.
+This flutter project is designed on Pixel 8 emulator.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Mobile View
+<img src="images/screenshots/ss-1.png" alt="Screenshot" height="400">  &ensp;&ensp; <img src="images/screenshots/ss-2.png" alt="Screenshot" height="400"> &ensp;&ensp;
+<img src="images/screenshots/ss-3.png" alt="Screenshot" height="400">  &ensp;&ensp; <img src="images/screenshots/ss-4.png" alt="Screenshot" height="400"> <br> <br> <br>
+<img src="images/screenshots/ss-5.png" alt="Screenshot" height="400">  &ensp;&ensp; <img src="images/screenshots/ss-6.png" alt="Screenshot" height="400"> &ensp;&ensp;
+<img src="images/screenshots/ss-7.png" alt="Screenshot" height="400">  &ensp;&ensp; <img src="images/screenshots/ss-8.png" alt="Screenshot" height="400">
