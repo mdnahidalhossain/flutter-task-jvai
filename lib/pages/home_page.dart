@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task_jvai/components/my_list_tile.dart';
 import 'package:flutter_task_jvai/constants/all_constants.dart';
 import 'package:flutter_task_jvai/models/Activity_Tile_Model.dart';
+import 'package:flutter_task_jvai/pages/activity_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -34,11 +35,21 @@ class HomePage extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    Text(
-                      "View All",
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ActivityPage(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        "View All",
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   ],
