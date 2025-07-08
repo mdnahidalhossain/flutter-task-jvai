@@ -17,9 +17,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: myAppBar,
       body: Container(
-        color: Colors.white, // background color
+        color: Colors.white,
         width: double.infinity,
-        height: double.infinity, // fill the space inside Scaffold's body
+        height: double.infinity,
         child: Center(
           child: Column(
             children: [

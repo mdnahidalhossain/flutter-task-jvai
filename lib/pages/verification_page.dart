@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task_jvai/components/my_button.dart';
-import 'package:flutter_task_jvai/components/my_textfield.dart';
 import 'package:flutter_task_jvai/components/small_textfield.dart';
 import 'package:flutter_task_jvai/pages/reset_password_page.dart';
 import 'package:flutter_task_jvai/theme/theme.dart';

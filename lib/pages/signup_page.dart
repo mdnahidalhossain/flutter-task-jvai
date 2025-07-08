@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task_jvai/components/my_button.dart';
 import 'package:flutter_task_jvai/components/my_textfield.dart';
 import 'package:flutter_task_jvai/pages/login_page.dart';
-import 'package:flutter_task_jvai/pages/signup_page.dart';
 import 'package:flutter_task_jvai/theme/theme.dart';
 
 class SignupPage extends StatefulWidget {

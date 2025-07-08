@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_task_jvai/theme/theme.dart';
 
 class ActivityTable extends StatelessWidget {
   const ActivityTable({super.key});
